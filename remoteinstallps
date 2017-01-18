@@ -1,0 +1,10 @@
+param(
+  [string]$exe,
+  [string]$path
+)
+
+
+$ipath = "C:\User\Administrator\Downloads"
+$Arguments = "/S", "/D=C:\Install\$a"
+
+Start-Process -FilePath $ipath\$exe -ArgumentList $Arguments
