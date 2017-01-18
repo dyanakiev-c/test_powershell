@@ -32,14 +32,23 @@ Navigate to the script location and execute the following:
 powershell -command .\install.ps1
 ```
 
+## To perform custom path installation
+Navigate to the script location and execute the script and provide it with 2 parameters (.exe name and folder name)
+
+```ps
+powershell -command .\install2.ps1 "npp.7.3.1.Installer.exe" "Notepad"
+```
+
 ## To check the final result
 
 Open the windows machine explorer and navigate to the directory
 C:\Program Files (x86)\Notepad++
 
+
+
 ## To Do
 
-1. Take the .exe location as a input parameter rather than have it hard coded.
+~~1. Take the .exe location as a input parameter rather than have it hard coded.~~
 2. Add a Return message for the result of the execution
 ..* Success or fail
 3. Make an unistall version
